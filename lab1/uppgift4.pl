@@ -22,16 +22,18 @@ edge(d,e).
 edge(e,g).
 edge(f,g).
 
+edge(d,a).
+
 % These edges makes the graph represented above undirected
-edge(b,a).
-edge(c,a).
-edge(d,b).
-edge(e,b).
-edge(d,c).
-edge(f,c).
-edge(e,d).
-edge(g,e).
-edge(g,f).
+% edge(b,a).
+% edge(c,a).
+% edge(d,b).
+% edge(e,b).
+% edge(d,c).
+% edge(f,c).
+% edge(e,d).
+% edge(g,e).
+% edge(g,f).
 
 % has_edge(X,Y) :- edge(X,Y); edge(Y,X).
 

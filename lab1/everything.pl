@@ -8,15 +8,15 @@ edge(d,e).
 edge(e,g).
 edge(f,g).
 
-edge(b,a).
-edge(c,a).
-edge(d,b).
-edge(e,b).
-edge(d,c).
-edge(f,c).
-edge(e,d).
-edge(g,e).
-edge(g,f).
+% edge(b,a).
+% edge(c,a).
+% edge(d,b).
+% edge(e,b).
+% edge(d,c).
+% edge(f,c).
+% edge(e,d).
+% edge(g,e).
+% edge(g,f).
 
 % select/3(element, list, result_list) removes element from list ONCE to get result_list
 % append/3(base_list, append_list, result_list) concatenates two lists IN ORDER to get a result_list
