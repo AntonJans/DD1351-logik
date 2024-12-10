@@ -1,0 +1,35 @@
+% SOMETHING AINT RIGHT
+[
+    imp(neg(s), k),
+    imp(k, n),
+    imp(and(k, n), neg(s))
+].
+
+or(and(k, neg(s)), and(s, neg(k))).
+
+[
+    [1, imp(neg(s), k), premise],
+    [2, imp(k, n), premise],
+    [3, imp(and(k, n), neg(s)), premise],
+    [
+        [4, s, assumption],
+        [
+            [5, k, assumption],
+            [6, n, impel(5, 2)],
+            [7, and(k, n), andint(6, 5)],
+            [8, neg(s), impel(7, 3)],
+            [9, cont, negel(4, 8)]
+        ],
+        [10, neg(k), negint(5, 9)],
+        [11, and(s, neg(k)), andint(4, 10)],
+        [12, or(and(k, neg(s)), and(s, neg(k))), orint2(11)]
+    ],
+    [
+        [13, neg(s), assumption],
+        [14, k, impel(13, 1)],
+        [15, and(k, neg(s)), andint(13, 14)],
+        [16, or(and(k, neg(s)), and(s, neg(k))), orint1(16)]
+    ],
+    [17, or(s, neg(s)), lem],
+    [18, or(and(k, neg(s)), and(s, neg(k))), orel(17, 4, 12, 13, 16)]
+].
